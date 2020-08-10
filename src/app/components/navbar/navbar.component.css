@@ -1,0 +1,39 @@
+.link-menu {
+    color: #CDCF0F;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.div-hr {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+.bottom-link-settings {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    right: 0;
+}
+
+.bottom-link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.mat-drawer {
+    background-color: #020424;
+    color: #fff;
+}
+
+.icons {
+    color: #fff;
+}
+
+.mat-toolbar.mat-primary {
+    background: #CDCF0F;
+    color: white;
+}

@@ -1,0 +1,58 @@
+<mat-sidenav-container fullscreen>
+    <mat-sidenav mode="side" #sidenav opened position="start">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://images.vexels.com/media/users/3/138767/isolated/preview/44e22c9bfe5bf32bda14e8b29d55493b-silueta-de-mujer-de-gimnasio-haciendo-abdominales-by-vexels.png" width="90" height="90" class="d-inline-block align-top" alt="" loading="lazy">                PAGEFIT
+            </a>
+        </nav>
+        <mat-nav-list class="mt-4">
+            <a mat-list-item routerLink="/pais1" class="link-menu mb-2">
+                <i class="fas fa-home mr-2 fa-lg icons"></i> Home
+            </a>
+            <hr class="div-hr">
+            <button mat-button [matMenuTriggerFor]="menu" class="link-menu"><i class="far fa-question-circle fa-lg icons"></i>
+                ¿Qué es PageFit?
+            </button>
+            <hr class="div-hr">
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>Quienes Somos</button>
+                <button mat-menu-item>Misión / Visión</button>
+            </mat-menu>
+
+            <a mat-list-item routerLink="/pais1" class="link-menu mb-2">
+                <i class="fas fa-dumbbell mr-2 fa-lg icons"></i> Rutinas
+            </a>
+            <hr class="div-hr">
+            <a mat-list-item routerLink="/pais1" class="link-menu mb-2">
+                <i class="far fa-calendar-alt mr-2 fa-lg icons"></i> Crea tu rutina
+            </a>
+
+            <a mat-list-item routerLink="/pais1" class="link-menu bottom-link-settings mb-2">
+                <i class="fas fa-user-cog mr-2 fa-lg icons"></i> Ajustes de cuenta
+            </a>
+            <a mat-list-item routerLink="/pais1" class="link-menu bottom-link mb-2">
+                <i class="fas fa-sign-out-alt mr-3 fa-lg icons"></i> Cerrar Sesión
+            </a>
+
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button> Home
+            <span class="toolbar-spacer"></span>
+            <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                <mat-icon>access_alarm</mat-icon>
+              </button>
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                <mat-icon>calendar_today</mat-icon>
+              </button>
+        </mat-toolbar>
+        <div class="main-content">
+            <p>
+                <app-aboutus></app-aboutus>
+            </p>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
